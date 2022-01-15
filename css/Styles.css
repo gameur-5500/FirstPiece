@@ -1,0 +1,444 @@
+  /* Fonts */
+
+@font-face 
+{  font-family: Ubuntu_Light ; 
+    src: url('Fonts/Ubuntu/Ubuntu-Light.ttf') 
+}
+
+@font-face 
+{  font-family: Ubuntu_Bold ; 
+    src: url('Fonts/Ubuntu/Ubuntu-Bold.ttf') 
+}
+
+@font-face 
+{  font-family: Cartoon ; 
+    src: url('Fonts/Cartoon/Gluten-Light.ttf') 
+}
+
+@font-face 
+{  font-family: Chinois ; 
+    src: url('Fonts/Chinois/GrechenFuemen-Regular.ttf') 
+}
+
+/* General */
+
+p, a{
+  font-family: 'Ubuntu_Light';
+}
+
+h1{
+  font-family: 'Ubuntu_Bold';
+}
+
+/* Loading Screen Z-Index: 3*/
+
+.particles-js-canvas-el{
+  position: absolute;
+  right: 0px;
+}
+
+#loader-Background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 62, 62);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#Img-Loader{
+  height: 91px;
+  position: absolute;
+  top: 23%;
+  margin-left: 25px;
+}
+
+#Img-Text-Loader{
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: white;
+  position: absolute;
+  top: 28.9%;
+  margin-left: 115px;
+}
+
+#loader{
+  display: inline-block;
+  position: relative;
+  animation: loader 2s infinite ease;
+  width: 100px;
+  height: 100px;
+  top: 38%;
+
+}
+
+#loader-inner{
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #d5d5d5;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+#Social-Text-Loader{
+  position: absolute;
+  top: 68%;
+  font-size: 17px;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+}
+
+#Loader-Loading{
+  position: absolute;
+  color: white;
+  top: 52%;
+  margin-right: -9px;
+}
+
+#Img_Socials_Loader_Twitter, #Img_Socials_Loader_Youtube, #Img_Socials_Loader_TikTok, #Img_Socials_Loader_Discord{
+  position: absolute;
+  width: 26px;
+  border: rgb(255, 255, 255) solid;
+  padding-left: 3px;
+  border-radius: 1.00009pc;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  background-color: black;
+  animation: Socials-Border 2s infinite ease-in;
+}
+#Img_Socials_Loader_TikTok{
+    top: 76%;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-left: 204px;
+}
+
+#Img_Socials_Loader_Discord{
+  top: 76%;
+  padding-right: 4px;
+  margin-left: 69px;
+}
+
+#Img_Socials_Loader_Youtube{
+    top: 76%;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-left: -67px;
+}
+
+#Loader-Year{
+  position: absolute;
+  top: 94%;
+  color: white;
+  font-weight: bold;
+}
+
+#Img_Socials_Loader_Twitter{
+  top: 76%;
+  margin-left: -200px;
+}
+
+@keyframes loader {
+  0% {
+    filter: brightness(0);
+  }
+
+  
+  25% {
+  }
+
+
+  50% {
+  }
+
+  75% {
+  }
+
+
+  100% {
+    transform: rotate(360deg);
+    filter: brightness(0.7);
+  }
+}
+
+@keyframes Socials-Border {
+  0% {
+    border-color: rgb(82, 78, 78);
+  }
+ 
+  25% {
+    border-color: #9da199;
+  }
+
+  50% {
+    border-color: rgb(90 90 90);
+  }
+  
+  75% {
+    border-color: #ededed;
+  }
+
+  100% {
+    border-color: rgb(62 62 62);
+  }
+}
+
+@keyframes Img-Rotation {
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  25% {
+    transform: rotate(180deg);
+
+  }
+
+  50% {
+    transform: rotate(180deg);
+
+  }
+
+  75% {
+    transform: rotate(360deg);
+
+  }
+
+  100% {
+    transform: rotate(360deg);
+
+  }
+}
+/* Header Z-Index: 0*/
+
+#Header_1 {
+  background-color: black;
+  height: 90px;
+}
+
+#Header_Img {
+  width: 122px;
+  margin-top: 2px;
+  position: absolute;
+  top: 22px;
+  cursor: pointer;
+  transition: transform .15s; /* Animation */
+  
+}
+
+#Header_Img:hover{
+  -webkit-transition: all 0.91s ease;
+  transform: scale(1.2); 
+}
+
+#Liens_Header {
+  color: white;
+  padding-top: 15px;
+}
+
+#P_Header1, #P_Header2, #P_Header3, #P_Header4, #P_Header5, #P_Header6{
+   font-family: 'Ubuntu_Bold';
+   padding-right: 35px;
+   cursor: pointer;
+   transition: transform .15s; /* Animation */
+   -webkit-transition: all 0.91s ease;
+
+}
+
+#P_Header1:hover {
+   color: #cd5c5ced;
+   -webkit-transition: all 0.91s ease;
+   text-shadow: 5px 4px #496270;
+}
+
+#P_Header2:hover {
+  color: #cd5c5ced;
+  -webkit-transition: all 0.91s ease;
+  text-shadow: 5px 4px #496270;
+}
+
+#P_Header3:hover {
+  color: #cd5c5ced;
+  -webkit-transition: all 0.91s ease;
+  text-shadow: 5px 4px #496270;
+}
+
+#P_Header4:hover {
+  color: #cd5c5ced;
+  -webkit-transition: all 0.91s ease;
+  text-shadow: 5px 4px #496270;
+}
+
+#P_Header5:hover {
+  color: #cd5c5ced;
+  -webkit-transition: all 0.91s ease;
+  text-shadow: 5px 4px #496270;
+}
+
+#P_Header6:hover {
+  -webkit-transition: all 0.91s ease;
+  color: #cd5c5ced;
+  text-shadow: 5px 4px #496270;
+}
+
+#Header_Button {
+    position: absolute;
+    right: 91px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    top: 42px;
+    background-color: #98cd28de;
+    border: white solid 2px;
+    border-radius: 5.4px;
+    color: #796e6ed1;
+    font-family: 'Cartoon';
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.91s ease;
+
+  }
+
+#Header_Button:hover {
+  -webkit-transition: all 0.91s ease;
+  background-color: indianred;
+  border: #78bb67 solid 2px;
+  color: #f9f5f5;
+  font-family: 'Cartoon';
+  font-size: 17px;
+  box-shadow: 6px 3px #826b6b;
+}
+
+  /* Body : Main Page Z-Index: 1-2*/
+
+#First_Img_Contnaire{
+  -webkit-transition: all 0.91s ease; 
+}
+
+#First_Img_Contnaire:hover{
+  -webkit-transition: all 0.91s ease; 
+  transform: scale(0.99);
+}
+
+#Main_Page_First_Img{
+  width: 100%;
+  height: 715.33px;
+  float: left;
+  box-shadow: 1px -1px 40px #ffffff;
+  z-index: 1;
+  content: "";
+  opacity: 0.7;
+  -webkit-transition: all 0.91s ease; 
+  filter: blur(3px);
+}
+
+#Main_Page_First_Img:hover{
+  -webkit-transition: all 0.91s ease; 
+  box-shadow: 11px 13px 25px #000000;
+  border-radius: 18px;
+  opacity: 0.8;
+  filter: blur(0px);
+}
+
+#Main_Page_First_Img_Text_Img {
+  width: 168px;
+  background: #00000000;
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  right: 50%;
+  padding-top: 99px;
+}
+
+#Main_Page_First_Img_Text_P {
+    position: absolute;
+    z-index: 1;
+    font-size: 19px;
+    right: 33%;
+    padding-top: 227px;
+    text-shadow: #000000 1px 1px 0px;
+    color: white;
+}
+
+#Main_Page_First_Img_Text_Button{
+  position: absolute;
+  z-index: 1;
+  margin-top: 377px;
+  right: 52%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 23px;
+  padding-left: 25px;
+  border: #476979 solid;
+  border-radius: 7px;
+  background-color: powderblue;
+  font-family: 'Chinois';
+  font-size: 19px;
+  -webkit-transition: all 0.91s ease; 
+
+}
+
+#Main_Page_First_Img_Text_Button:hover{
+    -webkit-transition: all 0.91s ease;     
+    border: #842f28cf solid;
+    background-color: tomato;
+    font-size: 20px;
+    color: whitesmoke;
+    box-shadow: #000000a3 7px 6px;
+}
+
+#Img_Selc{
+  width: 50px;
+  position: absolute;
+  right: 54%;
+  margin-top: 630px;
+}
+
+#First_Img_Buttons_LeftBtn{
+  position: absolute;
+  margin-top: 293px;
+  background-color: transparent;
+  border: 0px solid #000000;
+  color: black;
+  right: 0px;
+  left: 0px;
+  margin-left: 35px;
+  font-size: 24px;
+  -webkit-transition: all 0.91s ease;     
+  text-shadow: 0 2px 3px #000;
+}
+
+#First_Img_Buttons_LeftBtn:hover{
+  -webkit-transition: all 0.91s ease;     
+  color: white;
+}
+
+#First_Img_Buttons_RightBtn{
+  margin-left: -68px;
+  margin-top: 293px;
+  background-color: transparent;
+  border: 0px solid #000000;
+  position: absolute;
+  font-size: 24px;
+  -webkit-transition: all 0.91s ease;    
+  text-shadow: 0 2px 3px #000; 
+}
+
+#First_Img_Buttons_RightBtn:hover{
+  -webkit-transition: all 0.91s ease;     
+  color: white;
+}
