@@ -1,3 +1,6 @@
+All Changes I made:
+
+
 30/08/21: Starting making the design of the web site!
 
 02/09/21: Finished the design!
