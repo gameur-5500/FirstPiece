@@ -55,6 +55,6 @@ All Changes I made:
 
 15/01/22: Commited all the work I did from Summer 2021 (from the mounth 09).
 
-18/01/22: Fixed some bugs and changed some styles and added a README file to see all the changes of the code.
+18/01/22: Fixed some bugs, changed some styles and added a README file to see all the changes of the code.
 
-19/01/22: Changed the particles background to an animated sky background in the loading screen and also changed his style!
+19/01/22: Changed the particles background to an animated sky background in the loading screen and also changed his style and fixed some bugs!
