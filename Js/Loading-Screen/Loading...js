@@ -14,12 +14,12 @@ setTimeout(() => {
     setTimeout(() => {
         text.innerText = 'Loading.'
     }, 3000);
-//    setTimeout(() => {
-//        text.innerText = 'Loading..'
-//        setTimeout(() => {
-//            main_Page.style.display = 'Block'
-//            Header.style.display = 'Block'
-//        }, 10);
-//     },
-//      4000);
+   setTimeout(() => {
+       text.innerText = 'Loading..'
+       setTimeout(() => {
+           main_Page.style.display = 'Block'
+           Header.style.display = 'Block'
+       }, 10);
+    },
+     4000);
 }, 10);
